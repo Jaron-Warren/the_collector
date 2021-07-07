@@ -6,12 +6,12 @@
 
 // For example if we wanted to handle adding and removing of tags from inside the class we can add a method. Methods are the functions that are tied to a specific object. Syntactically they are similar to functions, however we will not be using the function keyword. Lets look at an example of how we could add the ability to add and remove tags to our Collection class:
 class collectable {
-  constructor(image, title, description, rarity, tags) {
-    this.image = image
+  constructor({ image, title, description, rarity, tags }) {
+    this.image = image || '//placehold.it/200x200'
     this.title = title
     this.description = description
-    this.rarity = rarity
-    this.tags = tags
+    this.rarity = rarity || 'comon'
+    this.tags = tags || []
   }
 
   addTag(tag) {
