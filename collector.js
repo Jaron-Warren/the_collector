@@ -21,3 +21,15 @@ class collectable {
     this.tags.splice(this.tags.indoexof(tag), 1)
   }
 }
+
+{/* <div class="col-3">
+<div class="card">
+  <img class="card-img-top" src="${this.image}" alt='Card iamge cap'>
+  <div class="card-body">
+    <i class="far fa-trash-alt delete"></i>
+    <h4 class="card-title">${this.title}</h4>
+    <p class="card-text">${this.description}</p>
+    <p class="card-text">${this.rarity}</p>
+  </div>
+</div>
+</div> */}
